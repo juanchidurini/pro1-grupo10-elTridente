@@ -1,3 +1,81 @@
-h1 {
-    color: aqua;
+body {
+    padding: 2% 10% 0%;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.contenedorBotonesHeader {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.botonesHeader {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.aBotonesHeader {
+    text-decoration: none;
+    color: rgb(110, 6, 6);
+    background-color: rgb(193, 122, 122);
+    width: 100%;
+    justify-content: center;
+
+}
+
+.liBotonesHeader {
+    display: flex;
+    flex-wrap: wrap;
+    width: 23%;
+    text-align: center;
+}
+
+.contenedorHeader2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2% 0% 0%;
+
+}
+
+.contenedorHomeYBusqueda {
+    width: 75%;
+    background-color: rgba(165, 42, 42, 0.254);
+}
+
+.tituloHeader {
+    background-color: bisque;
+}
+
+.buscador {
+    width: 70%;
+    height: 20px;
+}
+
+
+.contenedorLogo {
+    background-color: aqua;
+    width: 25%;
+}
+
+
+footer {
+    background-color: blue;
 }
