@@ -1,5 +1,5 @@
 body {
-    padding: 2% 10% 0%;
+    padding: 0%;
 }
 
 
@@ -7,6 +7,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: green;
+    padding-bottom: 2%;
 }
 
 
@@ -26,13 +28,14 @@ header {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
-    
+    padding-top: 2%;
+
 }
 
 .aBotonesHeader {
     text-decoration: none;
-    color: rgb(110, 6, 6);
-    background-color: rgb(193, 122, 122);
+    color: gold;
+    background-color: white;
     width: 100%;
     justify-content: center;
 
@@ -57,11 +60,12 @@ header {
 
 .contenedorHomeYBusqueda {
     width: 75%;
-    background-color: rgba(165, 42, 42, 0.254);
+    background-color: green;
 }
 
 .tituloHeader {
-    background-color: bisque;
+    color: white;
+    background-color:green;
 }
 
 .buscador {
@@ -71,11 +75,11 @@ header {
 
 
 .contenedorLogo {
-    background-color: aqua;
+    background-color: white;
     width: 25%;
 }
 
 
 footer {
-    background-color: blue;
+    background-color:green;
 }
