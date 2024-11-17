@@ -4,7 +4,7 @@ let url = 'https://dummyjson.com/recipes?limit=10'
 let formulario = document.querySelector(".formulario")
 let botonCargarMas = document.querySelector(".BotonCargarMas")
 
-
+/// articles con las recetas ///
 function obtenerRecetas(url) {
     fetch(url)
         .then(function (response) {
@@ -14,11 +14,11 @@ function obtenerRecetas(url) {
             let dato = data.recipes;
             let recetas = "";
             for (let i = 0; i < dato.length; i++) {
-                recetas += `<article>
+                recetas += `<article class="articleRecetas">
                                 <img src="${dato[i].image}" alt="">
                                 <p> "${dato[i].name}" </p>
                                 <p> "${dato[i].difficulty}"</p>
-                                <a href="./detalleReceta.html"> ir a detalle </a> 
+                                <a href="./detalleReceta.html?id=${dato[i].id}"> ir a detalle </a> 
                     </article>`
             }
             sectionRecetas.innerHTML = recetas
@@ -28,7 +28,7 @@ function obtenerRecetas(url) {
 
         })
 }
-
+/// formulario ///
 formulario.addEventListener("submit", function (e) {
     e.preventDefault()
     if (buscador.value == "") {
@@ -43,7 +43,8 @@ formulario.addEventListener("submit", function (e) {
 
 obtenerRecetas(url)
 
-botonCargarMas.addEventListener("click", function(){
+/// cargar 10 recetas mas///
+botonCargarMas.addEventListener("click", function(e){
     obtenerRecetas(url)
 })
 
