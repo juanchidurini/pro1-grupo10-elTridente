@@ -3,7 +3,7 @@ let sectionRecetas = document.querySelector(".sectionRecetas")
 let url = 'https://dummyjson.com/recipes?limit=10'
 let formulario = document.querySelector(".formulario")
 let botonCargarMas = document.querySelector(".BotonCargarMas")
-
+let recetasCargadas = 0;
 /// articles con las recetas ///
 function obtenerRecetas(url) {
     fetch(url)
@@ -21,7 +21,8 @@ function obtenerRecetas(url) {
                                 <a href="./detalleReceta.html?id=${dato[i].id}"> ir a detalle </a> 
                     </article>`
             }
-            sectionRecetas.innerHTML = recetas
+            sectionRecetas.innerHTML += recetas
+            recetasCargadas += dato.length
         })
         .catch(function (error) {
             console.log("error: " + error);
@@ -40,13 +41,15 @@ formulario.addEventListener("submit", function (e) {
     }
 
 })
-
 obtenerRecetas(url)
 
 /// cargar 10 recetas mas///
-botonCargarMas.addEventListener("click", function(e){
-    obtenerRecetas(url)
+
+botonCargarMas.addEventListener("click",function(){
+let cargarMasURL = `https://dummyjson.com/recipes?limit=10&skip=${recetasCargadas}`;
+obtenerRecetas(cargarMasURL);
 })
+
 
 
 
