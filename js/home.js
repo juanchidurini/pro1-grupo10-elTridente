@@ -22,7 +22,7 @@ function obtenerRecetas(url) {
                     </article>`
             }
             sectionRecetas.innerHTML += recetas
-            recetasCargadas += dato.length
+            recetasCargadas +=10
         })
         .catch(function (error) {
             console.log("error: " + error);
@@ -41,15 +41,14 @@ formulario.addEventListener("submit", function (e) {
     }
 
 })
+
 obtenerRecetas(url)
 
 /// cargar 10 recetas mas///
-
-botonCargarMas.addEventListener("click",function(){
-let cargarMasURL = `https://dummyjson.com/recipes?limit=10&skip=${recetasCargadas}`;
-obtenerRecetas(cargarMasURL);
+botonCargarMas.addEventListener("click", function(e){
+    url = `https://dummyjson.com/recipes?limit=10&skip=${recetasCargadas}`
+    obtenerRecetas(url)
 })
-
 
 
 
