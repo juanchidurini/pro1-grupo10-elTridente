@@ -2,7 +2,7 @@ let buscador = document.querySelector(".buscador")
 let sectionRecetas = document.querySelector(".sectionRecetas")
 let url = 'https://dummyjson.com/recipes?limit=10'
 let formulario = document.querySelector(".formulario")
-let botonCargarMas = document.querySelector(".BotonCargarMas")
+let botonCargarMas = document.querySelector(".botonCargarMas")
 let recetasCargadas = 0;
 /// articles con las recetas ///
 function obtenerRecetas(url) {
