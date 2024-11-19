@@ -16,8 +16,8 @@ function obtenerRecetas(url) {
             for (let i = 0; i < dato.length; i++) {
                 recetas += `<article class="articleRecetas">
                                 <img src="${dato[i].image}" alt="">
-                                <p> "${dato[i].name}" </p>
-                                <p> "${dato[i].difficulty}"</p>
+                                <p> ${dato[i].name} </p>
+                                <p> ${dato[i].difficulty}</p>
                                 <a href="./detalleReceta.html?id=${dato[i].id}"> ir a detalle </a> 
                     </article>`
             }
