@@ -28,8 +28,8 @@ fetch(url)
     /// Funcion para que cada categoria quede con un a y te pueda llevar a esa categoria en específico en la pagina categorias ///
     let categorias = ""
     for (let i = 0; i < data.tags.length; i++) {
-        categorias += `<a href="detalleCategoria.html?categoria=${data.tags[i]}">${data.tags[i]}  </a>` }
-        contenedorCategorias.innerHTML = categorias
+        categorias += `<a href="detalleCategoria.html?categoria=${data.tags[i]}"> ${data.tags[i]}  </a>` }
+        contenedorCategorias.innerHTML += categorias
 })
 .catch(function (error) {
     console.log(`el error es: ` + error);

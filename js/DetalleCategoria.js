@@ -21,7 +21,7 @@ categoria.innerText = IDreceta
 /// Funcion para una vez clikeada la categoria eleguida aparezca en detalleCategoria las recetas que estan incluidas en esa categoria///
  recetas =""
 for (let i = 0; i < data.recipes.length; i++) {
-    recetas += `<article>
+    recetas += `<article class="articleRecetas">
                 <img src="${data.recipes[i].image}" alt="">
                 <p> "${data.recipes[i].name}" </p>
                 <p> "${data.recipes[i].difficulty}"</p>
