@@ -9,27 +9,57 @@
 </head>
 
 <body>
+    <header>
 
-    <form class="formularioLogin" action="./home.html" method="get">
+        <section class="contenedorHeader2">
 
-        <section class="contenedorInputs">
+            <article class="contenedorLogo">
+                <img src="/" width="" height="" alt="logo">
+            </article>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email">
+            <article class="contenedorHomeYBusqueda">
+                <form action="./resultadoBusqueda.html" class="formulario" method="get">
+                    <input class="buscador" type="text" name="buscador" id="buscador" placeholder="Buscar...">
+                    <button class="botonBuscar" type="submit">Buscar</button>
+                </form>
+            </article>
 
         </section>
 
-        <section>
+        <section class="contenedorBotonesHeader">
+            <ul class="botonesHeader">
+                <li class="liBotonesHeader"><a class="aBotonesHeader" href="./home.html">Home</a></li>
+                <li class="liBotonesHeader"><a class="aBotonesHeader" href="./categorias.html">Categorías</a></li>
+                <li class="liBotonesHeader"><a class="aBotonesHeader" href="./login.html">Login</a></li>
+                <li class="liBotonesHeader"><a class="aBotonesHeader" href="./registro.html">Registro</a></li>
+            </ul>
+        </section>
+    </header>
 
-            <label for="contraseña">Contraseña</label>
-            <input type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
+    <main class="mainHome">
+        <form class="formularioLogin" action="./home.html" method="get">
 
-            <section>
+            <section class="contenedorInputs">
 
-                <button class="boton" type="submit">Ingresar</button>
-                <a href="./registro.html">No tengo cuenta</a>
+                <h3 class="tituloInputs">Email</h3>
+                <input type="email" name="email" id="email" placeholder="Email">
 
-    </form>
+
+                <h3 class="tituloInputs">Contraseña</h3>
+                <input type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
+
+            </section>
+
+            <button class="boton" type="submit">Ingresar</button>
+            <a class="noTengoCuenta" href="./registro.html">No tengo cuenta</a>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Batista, lucca, jovanni</p>
+    </footer>
+
 
 
 

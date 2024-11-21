@@ -1,7 +1,7 @@
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let buscador = qsObj.get("buscador");
-let sectionRecetas = document.querySelector(".articleRecetas")
+let sectionRecetas = document.querySelector(".sectionRecetas")
 
 
 let url = `https://dummyjson.com/recipes/search?q=${buscador}`;

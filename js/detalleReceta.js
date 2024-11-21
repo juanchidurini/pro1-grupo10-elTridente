@@ -7,7 +7,7 @@ let imgReceta = document.querySelector(".imgReceta")
 let nombreReceta = document.querySelector(".nombreReceta")
 let contenedorInstrucciones = document.querySelector(".contenedorInstrucciones")
 let tiempoCoccion = document.querySelector(".tiempoCoccion")
-let contenedorCategorias = document.querySelector(".contenedorCategorias")
+let contenedorCategorias = document.querySelector(".contenedorCategoriasDetalle")
 
 fetch(url)
 .then(function(response){
@@ -28,7 +28,7 @@ fetch(url)
     /// Funcion para que cada categoria quede con un a y te pueda llevar a esa categoria en específico en la pagina categorias ///
     let categorias = ""
     for (let i = 0; i < data.tags.length; i++) {
-        categorias += `<a href="detalleCategoria.html?categoria=${data.tags[i]}"> ${data.tags[i]}  </a>` }
+        categorias += `<a class="aa" href="detalleCategoria.html?categoria=${data.tags[i]}"> ${data.tags[i]}  </a>` }
         contenedorCategorias.innerHTML += categorias
 })
 .catch(function (error) {

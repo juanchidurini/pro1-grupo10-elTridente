@@ -5,6 +5,7 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     padding: 0%;
+    height: 100vh;
     background-image: url(../img/fondoIV.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,6 +31,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 100vh;
 }
 
 
@@ -134,7 +136,7 @@ header {
     margin-top: 2%;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.727);
 
 }
 
@@ -151,20 +153,13 @@ footer {
     height: 150px;
     border-top-left-radius:20px ;
     border-top-right-radius:20px ;
-
+margin-top: 15%;
 }
 
 /* <---resultadoBusqueda---> */
 
 /* <---detalleReceta---> */
 
-.mainDetalleRecetas {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-
-}
 
 .sectionDetalleRecetas {
     display: flex;
@@ -177,6 +172,7 @@ footer {
     width: 80%;
     border-radius: 10px;
     font-size: 20px;
+    height: 300px;
 }
 
 .articleImgReceta {
@@ -199,6 +195,13 @@ footer {
     
 }
 
+.aa{
+margin-left: 20px;
+}
+
+
+
+
 /* <---detalleCategoria---> */
 
 .recetasDeCategoria{
@@ -207,4 +210,68 @@ width: 100%;
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: space-evenly;
+}
+/*--Login--*/
+
+.formularioLogin{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 50%;
+height: 40%;
+margin-top: 200px;
+background-color: rgba(255, 255, 255, 0.588);
+border-radius: 20px;
+}
+.contenedorInputs{
+
+width: 400px;
+}
+.tituloInputs{
+margin: 0%;
+margin-top: 20px;
+margin-bottom: 0%;
+}
+
+#email{
+width: 100%;
+margin-top: 0%;
+}
+
+#contraseña{
+width: 100%;
+margin-bottom: 20px;
+}
+
+.noTengoCuenta{
+margin-top: 20px;
+}
+
+/* Categorias*/
+
+.contenedorCategorias{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 0%;
+width: 100%;
+list-style-type: none;
+justify-content:space-around;
+}
+
+.liCategorias{
+background-color: aliceblue;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 17px;
+padding: 10px;
+border-radius: 20px;
+width: 170px;
+text-align: center;
+}
+
+.aCategorias{
+text-decoration: none;
+color: black;
 }
