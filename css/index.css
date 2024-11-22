@@ -92,6 +92,8 @@ header {
 
 .contenedorHomeYBusqueda {
     width: 75%;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -154,12 +156,18 @@ header {
 
 }
 
+.imgHome {
+    border-radius: 10px;
+}
+
+
 .botonCargarMas {
     width: 15%;
     height: 60px;
     border-radius: 15px;
     background-color: white;
     margin: 5% 0% 0% 0%;
+    border: 0px;
 }
 
 footer {
@@ -190,10 +198,11 @@ footer {
     background-color: white;
     padding: 1%;
     margin: 0%;
+    margin-top: 2%;
     width: 80%;
     border-radius: 10px;
     font-size: 20px;
-    height: 300px;
+    height: 400px;
 }
 
 .articleImgReceta {
@@ -203,12 +212,13 @@ footer {
 .imgReceta {
     width: 100%;
     margin: 0%;
-
+    border-radius: 15px;
 }
 
 .instruccionesDetalleRecetas {
     width: 70%;
     margin: 0%;
+    height: 100%;
 }
 
 .contenedorInstrucciones {
@@ -219,7 +229,6 @@ footer {
 .aa {
     margin-left: 20px;
 }
-
 
 
 
@@ -269,6 +278,8 @@ footer {
     margin-top: 0%;
     height: 30px;
     border-radius: 10px;
+    border: 0px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.222);
 }
 
 #contraseña {
@@ -276,6 +287,8 @@ footer {
     margin-bottom: 20px;
     height: 30px;
     border-radius: 10px;
+    border: 0px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.222);
 }
 
 .noTengoCuenta {
@@ -300,6 +313,8 @@ footer {
     height: 40px;
     border-radius: 10px;
     background-color: white;
+    border: 0px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.222);
 }
 
 .tituloPaginas {
@@ -347,7 +362,7 @@ footer {
 
 @media (max-width: 420px) {
     .articleRecetas {
-        width: 90%;
+        width: 80%;
         margin: 0%;
         margin-top: 7%;
         
@@ -356,13 +371,19 @@ footer {
     .botonCargarMas {
         width: 50%;
     }
+
+    .contenedorBotonesHeader {
+        width: 90%;
+    }
     
     .botonesHeader {
         flex-direction: column;
+        
     }
 
     .liBotonesHeader {
         width: 100%;
+        margin-top: 2%;
     }
     
     .contenedorLogo {
@@ -372,6 +393,8 @@ footer {
 
     .contenedorHeader2 {
         flex-direction: column;
+        width: 90%;
+        margin-bottom: 2%;
     }
 
     .contenedorHomeYBusqueda {
