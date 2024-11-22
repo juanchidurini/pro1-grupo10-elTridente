@@ -2,26 +2,26 @@
 
 body {
     margin: 0%;
-    margin-left: 30px;
-    margin-right: 30px;
+
     padding: 0%;
 
-    background-image: url(../img/fondoIV.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: url(../img/fondo.png);
+
 }
 
 
 header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    /* background-color: rgb(150, 122, 88); */
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(177, 177, 177);
     width: 100%;
     margin: 0%;
     padding: 0%;
-    padding-bottom: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
     /* background-image: url(../img/fondoIV.jpeg);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -37,10 +37,12 @@ header {
 
 
 .contenedorBotonesHeader {
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .botonesHeader {
@@ -52,18 +54,17 @@ header {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
-    padding-top: 2%;
+    padding-top: 0%;
 
 }
 
 .aBotonesHeader {
+    display: flex;
     text-decoration: none;
     color: black;
-    background-color: white;
     width: 100%;
-    height: 20px;
     justify-content: center;
-    border-radius: 10px;
+   
 
 }
 
@@ -73,6 +74,9 @@ header {
     width: 23%;
     text-align: center;
     height: 30px;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
 
 }
 
@@ -80,8 +84,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    margin: 2% 0% 0%;
+    align-content: center;
+    width: 58%;
+    margin: 0% 0% 0%;
 
 }
 
@@ -101,19 +106,27 @@ header {
     width: 90%;
     height: 20px;
     border-radius: 10px;
+    border: 0px;
+    height: 30px;
 }
 
 .botonBuscar {
     display: flex;
+    margin: 0%;
+
     margin-left: 5px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
+    border: 0px;
+    height: 31px;
+    align-items: center;
+    background-color: white;
 }
 
 
 .contenedorLogo {
-    background-color: white;
+
     display: flex;
     justify-content: center;
     width: 20%;
@@ -124,7 +137,7 @@ header {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0%;
     padding: 0%;
 }
@@ -156,6 +169,8 @@ footer {
     border-top-right-radius: 20px;
     margin-top: 8%;
     padding-top: 2%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .pFooter {
@@ -287,10 +302,13 @@ footer {
     background-color: white;
 }
 
-.tituloLogin {
+.tituloPaginas {
+    background-color: rgba(191, 183, 183, 0.326);
     text-align: center;
     justify-self: center;
     width: 100%;
+    margin: 0%;
+    padding: 2%;
 }
 
 /* Categorias*/
@@ -306,7 +324,7 @@ footer {
 }
 
 .liCategorias {
-    background-color: aliceblue;
+    background-color: white;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 17px;
