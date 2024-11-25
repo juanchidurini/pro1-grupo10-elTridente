@@ -185,6 +185,14 @@ footer {
 
 .pFooter {
     text-align: center;
+   
+}
+
+.ppfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 550px;
 }
 
 /* <---resultadoBusqueda---> */
@@ -454,7 +462,7 @@ footer {
     align-items: center;
     width: 50%;
     height: 40%;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 25%;
     background-color: rgba(255, 255, 255, 0.588);
     border-radius: 20px;
@@ -481,9 +489,4 @@ footer {
    
     .terminosCondiciones{
     margin-top: 20px;
-    }
-
-
-    .botonRegister{
-        margin-top: 20px;
     }

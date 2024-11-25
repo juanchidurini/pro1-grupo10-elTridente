@@ -6,7 +6,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
+<header>
+
+    <section class="contenedorHeader2">
+
+        <article class="contenedorLogo">
+            <img class="logo" src="./img/logo.png" width="100" height="100" alt="logo">
+        </article>
+
+        <article class="contenedorHomeYBusqueda">
+            <form action="./resultadoBusqueda.html" class="formulario" method="get">
+                <input class="buscador" type="text" name="buscador" id="buscador" placeholder="Buscar...">
+                <button class="botonBuscar" type="submit">Buscar</button>
+            </form>
+        </article>
+
+    </section>
+
+    <section class="contenedorBotonesHeader">
+        <ul class="botonesHeader">
+            <li class="liBotonesHeader"><a class="aBotonesHeader" href="./home.html">Home</a></li>
+            <li class="liBotonesHeader"><a class="aBotonesHeader" href="./categorias.html">Categorías</a></li>
+            <li class="liBotonesHeader"><a class="aBotonesHeader" href="./login.html">Login</a></li>
+            <li class="liBotonesHeader"><a class="aBotonesHeader" href="./registro.html">Registro</a></li>
+        </ul>
+    </section>
+
+</header>
+
     <body class="bodyRegister">
+        <h2 class="tituloPaginas">Register</h2>
         <form class="formularioRegister" action="./login.html" method= "get" >
             <section class="contenedorInputs">
         
@@ -22,10 +52,15 @@
     
             </section>
     
-                <button class="botonRegister" type="submit" >Registrarse</button>
+                <button class="boton" type="submit" >Registrarse</button>
                 <a href="./login.html">Ya tengo una cuenta</a>
             
         </form>
+
+        <footer>
+            <p class="pFooter">Batista, lucca, jovanni</p>
+        </footer>
+        
 </body>
 <script src="./js/resgister.js"></script>
 </html>
