@@ -212,7 +212,6 @@ footer {
     width: 80%;
     border-radius: 10px;
     font-size: 20px;
-    height: 400px;
 }
 
 .articleImgReceta {
@@ -226,6 +225,9 @@ footer {
 }
 
 .instruccionesDetalleRecetas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 70%;
     margin: 0%;
     height: 100%;
@@ -336,6 +338,50 @@ footer {
     padding: 2%;
 }
 
+/* <---register---> */
+.formularioRegister{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40%;
+    margin-top: 150px;
+    margin-left: 25%;
+    background-color: rgba(255, 255, 255, 0.588);
+    border-radius: 20px;
+    }
+    .sectionRegister{
+   
+    width: 400px;
+    }
+    .tituloInputs{
+    margin: 0%;
+    margin-top: 20px;
+    margin-bottom: 0%;
+    }
+   
+    #email{
+    width: 100%;
+    margin-top: 0%;
+    }
+   
+    .input-error::placeholder {
+        color: red;
+    }
+
+    #contraseña{
+    width: 100%;
+    margin-bottom: 20px;
+    }
+   
+    .terminosCondiciones{
+    margin-top: 20px;
+    }
+    
+    .avisoTerminosYcondiciones{
+        color: red;
+    }
 /* Categorias*/
 
 .contenedorCategorias {
@@ -454,39 +500,3 @@ footer {
 
 }
 
-/* <---register---> */
-.formularioRegister{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 40%;
-    margin-top: 150px;
-    margin-left: 25%;
-    background-color: rgba(255, 255, 255, 0.588);
-    border-radius: 20px;
-    }
-    .sectionRegister{
-   
-    width: 400px;
-    }
-    .tituloInputs{
-    margin: 0%;
-    margin-top: 20px;
-    margin-bottom: 0%;
-    }
-   
-    #email{
-    width: 100%;
-    margin-top: 0%;
-    }
-   
-    #contraseña{
-    width: 100%;
-    margin-bottom: 20px;
-    }
-   
-    .terminosCondiciones{
-    margin-top: 20px;
-    }
