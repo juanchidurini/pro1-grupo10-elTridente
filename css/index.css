@@ -66,7 +66,7 @@ header {
     color: black;
     width: 100%;
     justify-content: center;
-   
+
 
 }
 
@@ -185,10 +185,10 @@ footer {
 
 .pFooter {
     text-align: center;
-   
+
 }
 
-.ppfooter{
+.ppfooter {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -339,7 +339,7 @@ footer {
 }
 
 /* <---register---> */
-.formularioRegister{
+.formularioRegister {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -347,41 +347,43 @@ footer {
     width: 50%;
     height: 400px;
     margin-top: 130px;
-    margin-left: 25%;
     background-color: rgba(255, 255, 255, 0.588);
     border-radius: 20px;
-    }
-    .sectionRegister{
-   
+}
+
+.sectionRegister {
+
     width: 400px;
-    }
-    .tituloInputs{
+}
+
+.tituloInputs {
     margin: 0%;
     margin-top: 20px;
     margin-bottom: 0%;
-    }
-   
-    #email{
+}
+
+#email {
     width: 100%;
     margin-top: 0%;
-    }
-   
-    .input-error::placeholder {
-        color: red;
-    }
+}
 
-    #contraseña{
+.input-error::placeholder {
+    color: red;
+}
+
+#contraseña {
     width: 100%;
     margin-bottom: 20px;
-    }
-   
-    .terminosCondiciones{
+}
+
+.terminosCondiciones {
     margin-top: 20px;
-    }
-    
-    .avisoTerminosYcondiciones{
-        color: red;
-    }
+}
+
+.avisoTerminosYcondiciones {
+    color: red;
+}
+
 /* Categorias*/
 
 .contenedorCategorias {
@@ -421,7 +423,7 @@ footer {
         width: 80%;
         margin: 0%;
         margin-top: 7%;
-        
+
     }
 
     .botonCargarMas {
@@ -431,17 +433,17 @@ footer {
     .contenedorBotonesHeader {
         width: 90%;
     }
-    
+
     .botonesHeader {
         flex-direction: column;
-        
+
     }
 
     .liBotonesHeader {
         width: 100%;
         margin-top: 2%;
     }
-    
+
     .contenedorLogo {
         width: 100%;
         margin: 5% 0%;
@@ -498,5 +500,7 @@ footer {
         width: 100%;
     }
 
+    .formularioRegister {
+        width: 100%;
+    }
 }
-
