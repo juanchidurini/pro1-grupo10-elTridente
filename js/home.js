@@ -17,7 +17,7 @@ function obtenerRecetas(url) {
                 recetas += `<article class="articleRecetas">
                                 <img class="imgHome" src="${dato[i].image}" alt="">
                                 <p class="nombreComida"> ${dato[i].name} </p>
-                                <p class="dificultadComida"> ${dato[i].difficulty}</p>
+                                <p class="dificultadComida"> Dificultad: ${dato[i].difficulty}</p>
                                 <a class="botonDetalles" href="./detalleReceta.html?id=${dato[i].id}"> ir a detalle </a> 
                     </article>`
             }

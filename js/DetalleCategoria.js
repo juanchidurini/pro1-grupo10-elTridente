@@ -24,7 +24,7 @@ for (let i = 0; i < data.recipes.length; i++) {
     recetas += `<article class="articleRecetas">
                 <img src="${data.recipes[i].image}" alt="">
                 <p class="nombreComida"> "${data.recipes[i].name}" </p>
-                <p class="dificultadComida" > "${data.recipes[i].difficulty}"</p>
+                <p class="dificultadComida" > Dificultad: ${data.recipes[i].difficulty}</p>
                 <a class="botonDetalles" href="./detalleReceta.html?id=${data.recipes[i].id}"> ir a detalle </a> 
             </article>`
 }
