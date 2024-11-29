@@ -12,9 +12,6 @@ formularioLogin.addEventListener(`submit`,function(e){
     } else if (contraseña.value == "") {alert("por favor introduzca su contraseña");
         return;
 
-    } else if (contraseña.value.length < 3) {alert("La contraseña debe tener al menos tres caracteres");
-        return;
-
     } else {formularioLogin.submit();}
 
 })
