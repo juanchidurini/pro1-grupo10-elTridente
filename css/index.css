@@ -66,6 +66,8 @@ header {
     color: black;
     width: 100%;
     justify-content: center;
+    box-shadow: 3px 3px rgb(0 0 0 / 22%);
+    border-radius: 10px;
 
 
 }
@@ -112,6 +114,8 @@ header {
     border-radius: 10px;
     border: 0px;
     height: 30px;
+    box-shadow: 3px 3px rgb(0 0 0 / 22%);
+
 }
 
 .botonBuscar {
@@ -126,6 +130,7 @@ header {
     height: 31px;
     align-items: center;
     background-color: white;
+    box-shadow: 3px 3px rgb(0 0 0 / 22%);
 }
 
 
@@ -255,15 +260,13 @@ footer {
 }
 
 .categoria {
-    background-color: aliceblue;
-    border-radius: 20px;
-    height: 30px;
-    width: 15%;
+    background-color: rgba(191, 183, 183, 0.326);
     text-align: center;
-    /* justify-self: center; */
-
-    padding: 10px;
+    justify-self: center;
+    margin: 0%;
+    padding: 2%;
 }
+
 
 /*--Login--*/
 
@@ -412,7 +415,23 @@ footer {
     color: black;
 }
 
+.botonDetalles{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    border: 0px;
+    box-shadow: 3px 3px rgb(0 0 0 / 22%);
+    text-align: center;
+}
 
+.nombreComida{
+    text-align: center;
+}
+
+.dificultadComida{
+    text-align: center;
+}
 
 
 
