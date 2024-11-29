@@ -9,16 +9,12 @@ formularioRegister.addEventListener(`submit`,function(e){
     console.log(terminosYcondiciones)
     if (email.value == "") {
         email.placeholder = "complete su email"
-        email.classList.add("input-error");
+        email.classList.add("input-error"); /// esto llama a una clase en css para que modifique el color del placeholfer si es que el campo email esta vacio///
        return;
 
     } else if (contraseña.value == "") {
             contraseña.placeholder = "ingrese una contraseña"
             contraseña.classList.add("input-error"); /// esto llama a una clase en css para que modifique el color del placeholfer si es que el campo contraseña esta vacio///
-        return;
-
-    } else if (contraseña.value.length < 3) {
-        contraseña.placeholder = "la contraseña debe tener al menos 3 caracteres"
         return;
 
     }else if (!terminosYcondiciones.checked){

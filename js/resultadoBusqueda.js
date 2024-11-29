@@ -25,8 +25,8 @@ function obtenerRecetas(url) {
             for (let i = 0; i < dato.length; i++) {
                 recetas += `<article class="articleRecetas">
                                 <img src="${dato[i].image}" alt="">
-                                <p> "${dato[i].name}" </p>
-                                <a href="./detalleReceta.html?id=${dato[i].id}"> ir a detalle </a> 
+                                <p class="nombreComida">"${dato[i].name}" </p>
+                                <a class="botonDetalles" href="./detalleReceta.html?id=${dato[i].id}"> ir a detalle </a> 
                     </article>`
             }
             sectionRecetas.innerHTML = recetas

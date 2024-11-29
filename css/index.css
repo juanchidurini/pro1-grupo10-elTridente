@@ -1,3 +1,7 @@
+* {
+    font-family: nunito;
+}
+
 /* <---home---> */
 
 body {
@@ -7,7 +11,7 @@ body {
 
     background-image: url(../img/fondo.png);
 
-    font-style: italic;
+    font-style: bold;
 
 }
 
@@ -24,9 +28,7 @@ header {
     padding-top: 4%;
     padding-bottom: 4%;
 
-    /* background-image: url(../img/fondoIV.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; */
+   
 }
 
 .mainHome {
@@ -66,7 +68,6 @@ header {
     color: black;
     width: 100%;
     justify-content: center;
-    box-shadow: 3px 3px rgb(0 0 0 / 22%);
     border-radius: 10px;
 
 
@@ -81,6 +82,7 @@ header {
     align-items: center;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 3px 3px rgb(0 0 0 / 22%);
 
 }
 
@@ -197,10 +199,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-top: 550px;
+    /* margin-top: 550px; */
 }
 
-/* <---resultadoBusqueda---> */
 
 /* <---detalleReceta---> */
 
@@ -248,8 +249,10 @@ footer {
     text-decoration: none;
     color: black;
     border-radius: 10px;
-    text-shadow: 3px 3px rgb(0 0 0 / 22%);
     text-align: center;
+    background-color: rgba(191, 183, 183, 0.326);
+    border-radius: 20px;
+    padding: 5px;
 }
 
 
@@ -266,6 +269,7 @@ footer {
 
 .categoria {
     background-color: rgba(191, 183, 183, 0.326);
+    width: 100%;
     text-align: center;
     justify-self: center;
     margin: 0%;
@@ -390,6 +394,10 @@ footer {
 
 .avisoTerminosYcondiciones {
     color: red;
+}
+
+.boton{
+    margin-bottom: 15px;
 }
 
 /* Categorias*/
